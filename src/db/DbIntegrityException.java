@@ -1,5 +1,7 @@
 package db;
 
+import java.util.Properties;
+
 public class DbIntegrityException extends RuntimeException {
 
 

@@ -3,6 +3,8 @@ package application;
 import java.util.Date;
 import java.util.List;
 
+import javax.swing.JOptionPane;
+
 import model.dao.DAOFactory;
 import model.dao.SellerDAO;
 import model.entities.Department;
@@ -51,6 +53,10 @@ public class Program {
 		sellerDao.update(seller);
 		System.out.println("Update completed");
 		
+		System.out.println("\n === Teste 6: seller Delete ===");
+		int id = Integer.parseInt(JOptionPane.showInputDialog("Enter id for delete test: "));
+		sellerDao.deleteById(id);
+		System.out.println("Delete Completed!");
 }
 
 }

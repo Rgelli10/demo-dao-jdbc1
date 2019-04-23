@@ -38,14 +38,6 @@ public class Program {
 				sellerDao.insert(newSeller);
 				System.out.println("Inserted! New id = " + newSeller.getId());
 				
-		
-	
-	System.out.println("\n === Teste 3: seller findAll ===");
-	
-	list = sellerDao.findAll();
-	for(Seller obj: list) {
-		System.out.println(obj);
-	}
 	
 		System.out.println("\n === Teste 5: seller Update ===");
 		seller = sellerDao.findById(1);
